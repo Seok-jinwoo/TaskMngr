@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TaskMngr/static/css/main.c2894b44.css",
+    "main.js": "/TaskMngr/static/js/main.c74428f0.js",
+    "static/js/453.b2b6302c.chunk.js": "/TaskMngr/static/js/453.b2b6302c.chunk.js",
+    "static/media/IMG_20240517_191910.jpg": "/TaskMngr/static/media/IMG_20240517_191910.b91a20a92df936db1aef.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/TaskMngr/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/TaskMngr/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/TaskMngr/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/TaskMngr/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/TaskMngr/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/leon.webp": "/TaskMngr/static/media/leon.5e1903a9b7518facd18a.webp",
+    "index.html": "/TaskMngr/index.html",
+    "main.c2894b44.css.map": "/TaskMngr/static/css/main.c2894b44.css.map",
+    "main.c74428f0.js.map": "/TaskMngr/static/js/main.c74428f0.js.map",
+    "453.b2b6302c.chunk.js.map": "/TaskMngr/static/js/453.b2b6302c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2894b44.css",
+    "static/js/main.c74428f0.js"
+  ]
+}

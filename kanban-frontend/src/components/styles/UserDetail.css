@@ -1,0 +1,64 @@
+.user-detail {
+    padding: 01px;
+    background-color: white;
+    border-radius: 5px;
+    
+    max-width: 100%; /* Prevents it from growing beyond its parent container */
+    overflow: hidden; /* Prevents overflow to avoid affecting sidebar */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-icon {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    margin-left: 16px; /* Space between title and icon */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.tasks-container {
+    display: flex; /* Align assigned and completed tasks side by side */
+    justify-content: space-between; /* Space between the two sections */
+    margin-top: 20px; /* Space above the tasks section */
+}
+
+.assigned-tasks,
+.completed-tasks {
+    flex: 1; /* Allow sections to grow equally */
+    margin-right: 20px; /* Space between the two sections */
+    max-width: calc(50% - 10px); /* Adjust based on your design */
+}
+
+.assigned-tasks:last-child {
+    margin-right: 0; /* Remove right margin from the last child */
+}
+
+h2 {
+    margin-bottom: 10px; /* Space below section headers */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    height: 300px; /* Set height to allow for scrolling */
+}
+
+li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .back-icon {
+        font-size: 20px; /* Smaller size for mobile */
+    }
+}

@@ -1,0 +1,46 @@
+.sidebar {
+  width: 15%;
+  background-color: #071952; /* Dark background */
+  padding: 0px;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 102vh; /* Full height */
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.Dashboard{
+  margin-top: 10px;
+}
+
+.sidebar li {
+  width: 210px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: white; /* White text */
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  margin-top: -10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.sidebar li:hover {
+  background-color: white; /* Change background to white on hover */
+  color: #071952; /* Change text color on hover */
+}
+
+/* Active state styles */
+.sidebar li.active {
+  background-color: white; /* White background for the active item */
+  color: #071952; /* Dark text for the active item */
+}
