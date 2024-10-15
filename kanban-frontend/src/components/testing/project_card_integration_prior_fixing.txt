@@ -1,0 +1,20 @@
+try {
+            // Always create the project regardless of existence
+            await axios.post('http://localhost:5000/api/projects', { name: project });
+    
+            // Now add the task
+            const newTask = { title, description, status, priority, assignedTo, project };
+            await axios.post('http://localhost:5000/api/tasks', newTask);
+            onTaskAdded(); // Call the passed callback to refresh the project list
+    
+            // Reset form fields
+            setTitle('');
+            setDescription('');
+            setStatus('To Do');
+            setPriority('Low');
+            setAssignedTo('');
+            setProject('');
+        } catch (error) {
+            console.error('Error adding task or project:', error);
+        }
+    }; 

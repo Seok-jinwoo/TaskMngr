@@ -1,0 +1,36 @@
+form {
+    display: flex; /* Align items in a column */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add space between elements */
+}
+
+input, textarea, select, button {
+    padding: 8px; /* Add padding for better spacing */
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 4px; /* Rounded edges */
+    font-size: 14px; /* Adjust font size if needed */
+    flex: 1; /* Allow items to grow and fill available space */
+    min-width: 120px; /* Set a minimum width for each input */
+}
+
+textarea {
+    height: 150px; /* Set a taller height for the description textarea */
+    width: 98%; /* Full width to make it look like a vertical rectangle */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: black; /* Dark background on hover */
+    color: white; /* White text on hover */
+}
+
+.select-container {
+    display: flex; /* Align select boxes in a row */
+    gap: 10px; /* Space between select boxes */
+}

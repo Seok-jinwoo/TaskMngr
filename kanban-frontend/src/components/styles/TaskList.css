@@ -1,0 +1,241 @@
+.task-header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and dropdown */
+    margin-bottom: 10px; /* Space below the header */
+    margin-left: 20px;
+}
+
+.task-header h1 {
+    margin-left: 20px; /* Adjust this value as needed */
+}
+
+.dropdown {
+    margin-right: auto; /* Pushes the dropdown to the far left */
+    margin-left: 560px; /* Adjust this as needed */
+    width: 150px; /* Increase width for better visibility */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.create-task-button {
+    margin-top: 5px; /* Space between buttons */
+    margin-left: 10px;
+    background-color: white; /* White background for buttons */
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 5px; /* Rounded edges */
+    padding: 10px 10px; /* Padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.create-task-button:hover {
+    background-color: black;
+    color: white; /* Darker shade on hover */
+}
+
+.Tasklist-ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 600px; /* Set height to allow for scrolling */
+}
+
+.task-card {
+    flex: 0 0 23%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-top: 0px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflowed content */
+}
+
+.task-card:hover {
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+.task-content {
+    flex: 1;
+    min-width: 0; /* Ensures the text wraps inside the card */
+}
+
+.task-content h2 {
+    font-size: 19px;
+    word-wrap: break-word; /* Ensure long words wrap */
+    white-space: normal; /* Wrap text within the card */
+    max-height: 40px; /* Set max height for title to limit space */
+    overflow: hidden; /* Hide overflowed text */
+}
+
+.task-details {
+    display: flex; /* Add flexbox to align items in one line */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between each detail */
+    margin-right: -14px;
+}
+
+.task-details p {
+    margin-right: 20px; /* Add space between items */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+.task-details-desc{
+    font-size: 14px;
+    min-height: 130px;
+}
+/*
+.task-details-status{
+    background-color: #161D6F;
+    color: white;
+    width: 50px;
+    border-radius: 15%;
+}*/
+
+.task-details-priority{
+    margin-left: -68px;
+}
+/*
+.task-details-assign{
+    background-color: #161D6F;
+    color: white;
+}*/
+
+
+.task-buttons {
+    display: flex;
+    flex-direction: row; /* Stack buttons vertically */
+}
+
+
+.task-buttons button {
+    margin-top: 5px; /* Space between buttons */
+    background-color: white; /* White background for buttons */
+    border: 1px solid white; /* Thin border */
+    padding: 5px 10px; /* Padding inside buttons */
+    min-width: 81px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.task-buttons button:hover {
+    background-color: black; /* Light gray on hover */
+    color: white;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 800px; /* Adjust width as needed */
+    height: auto; /* Changed to auto to fit content */
+    max-height: 90vh; /* Prevent overflow */
+    overflow-y: auto; /* Adds scroll if content overflows */
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 24px; 
+    color: black; 
+}
+
+/* Task detail modal */
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px; /* Space between description and dropdowns */
+    max-height: 100px; /* Ensures description doesn't grow too much */
+    overflow-y: auto; /* Adds scroll if description overflows */
+}
+
+.modal-content .task-detail-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Space above the dropdowns and button */
+}
+
+.task-detail-actions select {
+    width: 150px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.task-detail-actions button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-detail-actions button:hover {
+    background-color: #333;
+}
+
+.back-icon:hover {
+    color: #7077A1;
+    transition: 0.3s;
+}
+
+/* Custom hover style for dropdown items */
+.ant-select-item {
+    color: black; /* Default color */
+}
+
+.ant-select-item:hover {
+    background-color: black; /* Hover background color */
+    color: black; /* Text color on hover */
+}
+
+@keyframes appear{
+    from{
+        opacity: 1;
+        clip-path: inset(0 100% 100% 0);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.task-card{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+/*#071952*/
+

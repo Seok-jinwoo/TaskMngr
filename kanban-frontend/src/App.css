@@ -1,0 +1,17 @@
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Ensure it covers full height */
+}
+
+.main-content {
+  flex: 1; /* Allow main content to grow */
+  padding: 20px;
+  background-color: #EBF4F6; /* Light background for contrast */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

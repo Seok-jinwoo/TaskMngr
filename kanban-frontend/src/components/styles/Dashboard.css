@@ -1,0 +1,82 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .dash-log-out{
+    background-color: white;
+    color: black;
+  }
+
+  .dash-log-out:hover{
+    background-color:#071952 !important;
+    color: white !important;
+  }
+  
+  .task-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 23%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-card {
+    height: 200px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-bar-container {
+    display: flex;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #102C57;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+  
+  .completed {
+    padding-top: 5px;
+    background-color: #201E43;
+  }
+  
+  .in-progress {
+    padding-top: 5px;
+    background-color: #134B70;
+  }
+  
+  .to-do {
+    padding-top: 5px;
+    background-color: #508C9B;
+  }
+   
+  .h3{
+    padding-bottom: 30px;
+  }
+
+  .dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This can be adjusted based on your layout preference */
+  }

@@ -1,0 +1,28 @@
+import React, { useState } from 'react';
+import TaskList from './components/TaskList';
+import UserList from './components/UserList';
+import UserDetails from './components/UserDetails'; // New UserDetails component
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router components
+
+function App() {
+    const [taskAdded] = useState(false);
+
+    return (
+        <Router>
+            <div className="App">
+                <div className="sidebar">
+                    <UserList /> {/* Show user list */}
+                </div>
+                <div className="main-content">
+                    <Routes>
+                        <Route path="/" element={<TaskList taskAdded={taskAdded} />} /> {/* Show Task List */}
+                        <Route path="/user-details/:id" element={<UserDetails />} /> {/* Show user details when a username is clicked */}
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    );
+}
+
+export default App;

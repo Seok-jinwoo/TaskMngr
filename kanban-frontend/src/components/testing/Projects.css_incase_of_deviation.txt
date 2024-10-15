@@ -1,0 +1,54 @@
+.project-header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and button */
+    margin: 20px; /* Space around the header */
+}
+
+.project-header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.create-project-button {
+    background-color: white; /* White background for button */
+    border: 1px solid #ccc; /* Thin border */
+    border-radius: 5px; /* Rounded edges */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.create-project-button:hover {
+    background-color: black; /* Darker shade on hover */
+    color: white; /* Text color on hover */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    margin: 20px; /* Space around the project list */
+}
+
+.project-card {
+    border: 1px solid #ccc; /* Border for cards */
+    border-radius: 5px; /* Rounded edges */
+    margin: 10px; /* Space between cards */
+    padding: 15px; /* Padding inside cards */
+    background-color: #fff; /* Card background color */
+    flex: 1 1 300px; /* Flexible card size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Animation for scaling */
+}
+
+.project-card:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.project-card h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Card title size */
+}
+
+.project-card p {
+    margin: 5px 0; /* Space between paragraphs */
+}
